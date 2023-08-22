@@ -1,0 +1,16 @@
+{
+  "name": "flat-css",
+  "version": "0.0.1",
+  "description": "Flat Minimalist CSS Framework",
+  "main": "main.js",
+  "repository": "",
+  "author": "Ignacio Rojas <imroca@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.64.2"
+  },
+  "scripts": {
+    "sass:watch": "sass --watch src/main.scss dist/flat.css",
+    "sass:build": "sass --style=compressed src/main.scss dist/flat.min.css"
+  }
+}

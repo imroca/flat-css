@@ -1,0 +1,106 @@
+.cell {
+  padding: 1em;
+  border: 1px solid;
+  margin: 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+}
+
+header + section {
+  border-top: 0;
+}
+
+header .container {
+  border-top: 0;
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.wrapper .container {
+  max-width: 80rem;
+}
+.wrapper > .container {
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+}
+
+/* a class for centering a div in the middle of the screen */
+.centered {
+  width: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.2rem solid var(--bg-primary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.theme-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+nav {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  padding: 0 1rem;
+}
+
+nav a {
+  color: var(--color-secondary);
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+nav ul li ul {
+  background-color: var(--color-secondary);
+}
+
+nav ul li ul li a {
+  color: var(--color-primary);
+}
+
+nav ul li ul li a:hover {
+  color: var(--color-tertiary);
+}
+
+body > header {
+  padding: 5rem;
+  margin-bottom: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+body > footer {
+  padding: 5rem;
+  margin-bottom: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+}
+
+body > footer a {
+  color: var(--color-tertiary);
+}
+
+body > footer a:hover,
+body > footer a:active {
+  color: var(--color-secondary);
+}
+
+.is-red {
+  color: red;
+}

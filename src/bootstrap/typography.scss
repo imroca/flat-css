@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+body {
+  font-family: var(--font-family-sans);
+  font-family: var(--font-sans);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--background-color);
+  color: var(--font-color);
+}

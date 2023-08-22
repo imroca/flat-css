@@ -1,0 +1,99 @@
+nav {
+  display: flex;
+  height: 5.2rem;
+  width: 100%;
+  max-width: 100%;
+  z-index: 2;
+}
+
+nav.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav,
+nav section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+nav ul {
+  list-style: none;
+  align-items: center;
+  width: auto;
+}
+
+nav ul:first-child li:first-child {
+  margin-left: 0;
+}
+
+nav ul:last-child li:last-child {
+  margin-right: 0;
+}
+
+nav li {
+  float: left;
+  margin: 0;
+  margin: 0 1rem;
+  padding: 0;
+  position: relative;
+}
+
+nav img {
+  margin: 1.6rem 0;
+}
+
+nav a,
+nav span {
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 5.2rem !important;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul {
+  // border: 0.1rem solid var(--border-color);
+  border-radius: 0.5rem;
+  // box-shadow: var(--color-light) var(--color-gray);
+  display: none;
+  height: auto;
+  left: -6rem;
+  padding: 0;
+  position: absolute;
+  top: 3rem;
+  white-space: nowrap;
+  width: auto;
+  z-index: 3;
+}
+
+nav ul li ul::before {
+  /* fill gap above to make mousing over them easier */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5rem;
+  height: 0.5rem;
+}
+
+nav ul li ul li {
+  float: none;
+  display: block;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li ul li,
+nav ul li ul li a {
+  display: block;
+  line-height: 1.6rem !important;
+}

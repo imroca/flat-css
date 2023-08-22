@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge Minimalist CSS Framework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="dist/flat.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <section>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+        <!-- <img src="assets/img/logo.png" alt="Logo" /> -->
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined">palette</span></a
+            >
+            <ul>
+              <li>
+                <a href="javascript:void(0);" onclick="changeMode('dark')"
+                  >Dark</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0);" onclick="changeMode('light')"
+                  >Light</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <header>
+      <section>
+        <!-- <p><img src="assets/img/logo.png" alt="Edge" /></p> -->
+        <h1>FLAT CSS</h1>
+        <strong>
+          This CSS is a mix of a bunch of framework out there. Think milligram,
+          mvp, and others.
+        </strong>
+      </section>
+    </header>
+    <main>
+      <section id="introduction">
+        <h3>Introduction</h3>
+        <p>
+          This is a semantic CSS minimalist framework, with a few utility
+          classes, for fast development and prototyping.
+        </p>
+      </section>
+      <section id="usage">
+        <h3>Usage</h3>
+        <p>First add the following dependencies:</p>
+        <ul>
+          <li>Normalize.css</li>
+          <li>Pick a font from Google Fonts</li>
+          <li>Material Symbols Outlined font from Google</li>
+        </ul>
+        <p>Following that add the minimalized version of the CSS.</p>
+        <p>
+          Finally add your own customizations to the CSS, or create a new CSS
+          file and add it to the HTML.
+        </p>
+        <pre><code>&#x3C;head&#x3E;
+    &#x3C;link rel=&#x22;preconnect&#x22; href=&#x22;https://fonts.googleapis.com&#x22; /&#x3E;
+    &#x3C;link rel=&#x22;preconnect&#x22; href=&#x22;https://fonts.gstatic.com&#x22; crossorigin /&#x3E;
+    &#x3C;!-- Add cross browser consistency with normalize.css --&#x3E;
+    &#x3C;link
+      rel=&#x22;stylesheet&#x22;
+      href=&#x22;https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css&#x22;
+    /&#x3E;
+    &#x3C;!-- Add fonts and icons from Google --&#x3E;
+    &#x3C;link
+      href=&#x22;https://fonts.googleapis.com/css2?family=Roboto&#x26;family=Inconsolata&#x26;family=Open+Sans&#x26;display=swap&#x22;
+      rel=&#x22;stylesheet&#x22;
+    /&#x3E;
+    &#x3C;link
+      rel=&#x22;stylesheet&#x22;
+      href=&#x22;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&#x22;
+    /&#x3E;
+    &#x3C;!-- Include the CSS Framework --&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;assets/css/edge.min.css&#x22; /&#x3E;
+    &#x3C;!-- Include your own customizations --&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;assets/css/styles.css&#x22; /&#x3E;
+&#x3C;/head&#x3E;</code></pre>
+      </section>
+      <section id="typography">
+        <h3>Typography</h3>
+        <p>
+          HTML headings are titles or subtitles that you want to display on a
+          webpage.
+        </p>
+
+        <h5>Headings</h5>
+
+        <h1>H1. Heading</h1>
+        <h2>H2. Heading</h2>
+        <h3>H3. Heading</h3>
+        <h4>H4. Heading</h4>
+        <h5>H5. Heading</h5>
+        <h6>H6. Heading</h6>
+        <p>&nbsp;</p>
+
+        <h4>Text utilities.</h4>
+
+        <p>Text is primary.</p>
+        <p>Text is secondary.</p>
+        <p>Text is light.</p>
+        <p>
+          <span>Text is gray.</span>
+        </p>
+        <p><span>Text is dark.</span></p>
+        <p><span>Text is monospace.</span></p>
+        <p>Text is sup<sup>What!</sup></p>
+      </section>
+      <section id="navs">
+        <h3>Navs</h3>
+        <p>
+          The <code>&lt;nav&gt;</code> tag defines a set of navigation links. We
+          have included a <code>is-sticky</code> utility class to stick you main
+          nav bar to the top of the browser.
+        </p>
+        <nav>
+          <ul>
+            <li>
+              <a href="javascript:void(0);">Menu 1</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Menu 2</a>
+            </li>
+          </ul>
+          <!-- <img src="assets/img/logo.png" alt="Logo" /> -->
+          <ul>
+            <li>
+              <a href="javascript:void(0);">Menu 3</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Menu 4</a>
+              <ul>
+                <li><a href="javascript:void(0);">Sub menu 1</a></li>
+                <li><a href="javascript:void(0);">Sub menu 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="blockquote">
+        <h3>Blockquotes</h3>
+        <p>
+          The blockquote tag specifies a section that is quoted from another
+          source.
+        </p>
+        <blockquote>
+          <p>
+            At Edge we always strive to meet each client’s unique set of needs
+            and expectations by delivering a truly personalized experience on a
+            professional basis. Our team of developers, technologists and
+            strategists share a passion for creating digital services that
+            reshape the connection between clients and their consumers.
+          </p>
+          <footer>
+            -
+            <em
+              >Extracted from <a href="https://edge.com.py/">edge.com.py</a></em
+            >
+          </footer>
+        </blockquote>
+      </section>
+      <section id="buttons">
+        <h3>Buttons</h3>
+        <p>Beautiful CSS buttons</p>
+        <!-- <a href="#">Default Button</a> -->
+        <p>
+          <button>Default Button</button>
+          <button class="outline">Outlined Button</button>
+          <input class="clear" type="button" value="Clear Button" />
+        </p>
+        <p>Disabled</p>
+        <p>
+          <button disabled>Default Disabled Button</button>
+          <button class="outline" disabled>Outlined Disabled Button</button>
+          <input
+            class="clear"
+            type="button"
+            value="Clear Disabled Button"
+            disabled
+          />
+        </p>
+        <p>With icons</p>
+        <button>
+          Continue
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined">settings</span>
+          Settings
+        </button>
+      </section>
+      <section id="lists">
+        <h3>Lists</h3>
+        <p>
+          The List in CSS specifies the listing of the contents or items in a
+          particular manner i.e., it can either be organized orderly or unorder
+          way, which helps to make a clean webpage.
+        </p>
+        <div class="row">
+          <div class="column">
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2</li>
+            </ol>
+          </div>
+          <div class="column">
+            <dl>
+              <dt>1. Description list item</dt>
+              <dd>1.1. Description list item</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section id="forms">
+        <h3>Forms</h3>
+        <p>
+          Web forms are a common element of website design, ranging in
+          complexity from a search form field to contact forms and complex data
+          filtering. Knowing how to use CSS to style and work with these
+          elements helps provide better solutions to these everyday problems,
+          and can improve your user’s experience of your website
+        </p>
+        <form>
+          <fieldset>
+            <label for="comapany">Name</label>
+            <input type="text" placeholder="Company name" id="comapany" />
+            <label for="employess">Employees number</label>
+            <select id="employess">
+              <option value="0-13">0-13</option>
+              <option value="14-17">14-17</option>
+              <option value="18-23">18-23</option>
+              <option value="24+">24+</option>
+            </select>
+            <label for="comment">Comment</label>
+            <textarea placeholder="Leave a comment" id="comment"></textarea>
+            <div class="float-right">
+              <input type="checkbox" id="confirmField" />
+              <label class="label-inline" for="confirmField"
+                >Check this box</label
+              >
+            </div>
+            <input type="submit" value="Send" />
+          </fieldset>
+        </form>
+      </section>
+      <section id="dialog">
+        <h3>Dialogs</h3>
+        <p>
+          Represents a dialog box or other interactive component, such as a
+          dismissible alert, inspector, or subwindow.
+        </p>
+        <dialog id="exampleDialog">
+          <h4>Greetings, human! I come in peace.</h4>
+          <p>
+            I am a dialog. You can put whatever you want in me. I will be
+            absolutely centered on the page, and will look great no matter what
+            size screen you're using.
+          </p>
+          <form method="dialog">
+            <button class="float-right">Dismiss</button>
+          </form>
+        </dialog>
+        <button onclick="document.getElementById('exampleDialog').show()">
+          Open dialog
+        </button>
+      </section>
+      <section id="tables">
+        <h3>Tables</h3>
+        <table>
+          <caption>
+            Example
+          </caption>
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td>Row 1</td>
+              <td>Row 1</td>
+            </tr>
+            <tr>
+              <td>Row 2</td>
+              <td>Row 2</td>
+              <td>Row 2</td>
+            </tr>
+            <tr>
+              <td>Row 3</td>
+              <td>Row 3</td>
+              <td>Row 3</td>
+            </tr>
+            <tr>
+              <td>Row 4</td>
+              <td>Row 4</td>
+              <td>Row 4</td>
+            </tr>
+            <tr>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </tfoot>
+        </table>
+        <table>
+          <caption>
+            Striped
+          </caption>
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td>Row 1</td>
+              <td>Row 1</td>
+            </tr>
+            <tr>
+              <td>Row 2</td>
+              <td>Row 2</td>
+              <td>Row 2</td>
+            </tr>
+            <tr>
+              <td>Row 3</td>
+              <td>Row 3</td>
+              <td>Row 3</td>
+            </tr>
+            <tr>
+              <td>Row 4</td>
+              <td>Row 4</td>
+              <td>Row 4</td>
+            </tr>
+            <tr>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="card">
+        <h3>Cards</h3>
+        <div class="row">
+          <div class="column">
+            <article>
+              <header><h4>APIs</h4></header>
+              <p>
+                One complete platform for building, integrating, and exposing
+                your digital services as managed APIs in the cloud, on-premises,
+                and hybrid architectures to drive your digital transformation
+                strategy.
+              </p>
+              <footer>Platform: Auth0</footer>
+            </article>
+          </div>
+          <div class="column">
+            <article>
+              <header><h4>Identity</h4></header>
+              <p>
+                So what is an identity solution? An identity solution helps
+                manage digital identities while also ensuring users are who they
+                say they are when they log in. It can also help with controlling
+                digital access to specific data or documents across the company
+              </p>
+              <footer>Platform: Auth0</footer>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <article>
+              <img src="assets/img/campain.jpeg" alt="Campain" />
+              <header><h4>Campaign Manager</h4></header>
+              <p>
+                Campaign Manager helps you plan, execute, and analyze your
+                marketing efforts. Create an end-to-end campaign that connects
+                multiple marketing touchpoints to a single objective. Then, use
+                the insights from your campaign report to help guide your next
+                steps.
+              </p>
+              <footer>Platform: Braze</footer>
+            </article>
+          </div>
+          <div class="column">
+            <article>
+              <img src="assets/img/chatbot.webp" alt="Logo" />
+              <header><h4>Chatbot</h4></header>
+              <p>
+                A chatbot is software that simulates human-like conversations
+                with users via chat. Its key task is to answer user questions
+                with instant messages.
+              </p>
+              <footer>Platform: Propietary</footer>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="grid">
+        <h3 class="is-primary">Grid</h3>
+        <div class="row">
+          <div class="column cell">.column</div>
+          <div class="column cell">.column</div>
+          <div class="column cell">.column</div>
+          <div class="column cell">.column</div>
+        </div>
+        <div class="row">
+          <div class="column cell">.column</div>
+          <div class="column column-50 column-offset-25 cell">
+            .column column-50 column-offset-25
+          </div>
+        </div>
+      </section>
+      <section id="code">
+        <h3>Code</h3>
+        <p>
+          The Code element represents a fragment of computer code. Just wrap
+          anything in a <code>code</code> and it will appear like this. if you
+          need a block, by default, enter the <code>code</code> within the
+          <code>pre</code>element.
+        </p>
+        <pre><code>.style1 {
+  color: #9b4dca; 
+}</code></pre>
+      </section>
+      <section id="utilities">
+        <h3>Utilities</h3>
+        <p>Some functional classes:</p>
+        <ul>
+          <li>clearfix</li>
+          <li>float-left</li>
+          <li>float-right</li>
+        </ul>
+      </section>
+      <section id="utilities">
+        <h3>Icons</h3>
+        <p>
+          Any icon libary will do, in this example for simplicity we stick with
+          icons from <a href="https://fonts.google.com/icons">Google Fonts</a>.
+        </p>
+        <p>
+          <span class="material-symbols-outlined">search</span>
+          <span class="material-symbols-outlined">home</span>
+          <span class="material-symbols-outlined">menu</span>
+          <span class="material-symbols-outlined">settings</span>
+          <span class="material-symbols-outlined">logout</span>
+        </p>
+      </section>
+      <section id="customize">
+        <h3>Customize</h3>
+        <p>To customize override this variables</p>
+        <pre><code>:root {
+  --font-family: "Roboto", sans-serif;
+  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-family-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  --font-color: #333;
+  --font-size: 1.6rem;
+  --line-height: 1.6;
+  --letter-spacing: 0.01em;
+  --background-color: #fff;
+
+  --color-initial: #fff;
+  --color-primary: #ff8531;
+  --color-secondary: #00bdc4;
+  --color-light: #ccc;
+  --color-gray: #ababab;
+  --color-dark: #222;
+}</code></pre>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p>
+          Made with <span class="is-red">♥</span> by
+          <a href="https://gitlab.edge.com.py/ignacio.rojas">Ignacio Rojas</a>
+        </p>
+      </section>
+    </footer>
+    <script>
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.body.classList.add("dark");
+        // document.querySelector("#theme-switch").innerHTML = "🌙";
+      }
+
+      function switchMode(el) {
+        const bodyClass = document.body.classList;
+        bodyClass.contains("dark")
+          ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
+          : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
+      }
+
+      function changeMode(theme) {
+        switch (theme) {
+          case "dark":
+            document.body.classList.remove("millicom");
+            document.body.classList.add("dark");
+            break;
+          case "light":
+            document.body.classList.remove("dark");
+            document.body.classList.remove("millicom");
+            break;
+          case "millicom":
+            document.body.classList.remove("dark");
+            document.body.classList.add("millicom");
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

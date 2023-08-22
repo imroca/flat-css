@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Inconsolata&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="dist/edge.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="theme-switch">
+        <a
+          href="javascript:void(0)"
+          id="theme-switch"
+          onclick="switchMode(this)"
+          >🌙</a
+        >
+      </div>
+
+      <div class="centered">
+        <h5 class="is-secodary is-center">Login</h5>
+        <form action="#">
+          <fieldset>
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <div class="is-center">
+              <input type="submit" value="Login" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+      document.querySelector("#theme-switch").innerHTML = "🌙";
+    }
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
+        : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
+    }
+  </script>
+</html>
