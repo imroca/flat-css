@@ -1,13 +1,13 @@
-# Edge CSS
+# FLAT CSS
 
-Is a Semantic, Minimalistic, 15kb CSS Framework for the lazy.
+Is a Semantic, Minimalistic, 15kb CSS Starter Styling.
 
 ## Usage
 
 ```html
 <head>
   ...
-  <link rel="stylesheet" href="edge.min.css" />
+  <link rel="stylesheet" href="flat.min.css" />
   ...
 </head>
 ```
