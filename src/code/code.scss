@@ -1,4 +1,5 @@
 code {
+  font-family: var(--font-family-mono);
   font-family: var(--font-mono);
   color: var(--color-black);
   background: var(--bg-grey-color);
@@ -10,7 +11,7 @@ code {
 }
 pre {
   background: var(--color-grey);
-  border-left: 0.3rem solid var(--color-secondary);
+  border-left: 0.3rem solid var(--color-primary);
   overflow-y: hidden;
 
   & > code {

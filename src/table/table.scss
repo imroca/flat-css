@@ -17,13 +17,6 @@ th {
     padding-right: 1em;
   }
 }
-table.striped tr:nth-of-type(2n) {
-  background-color: var(--color-light);
-}
-
-body.dark table.striped tr:nth-of-type(2n) {
-  background-color: var(--color-gray);
-}
 
 @media (min-width: 40rem) {
   table {

@@ -1,9 +1,9 @@
 a {
-  color: var(--color-primary);
+  color: var(--link-color);
   text-decoration: none;
 
   &:focus,
   &:hover {
-    color: var(--color-tertiary);
+    color: var(--link-hover-color);
   }
 }

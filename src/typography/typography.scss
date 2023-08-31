@@ -47,7 +47,7 @@ h6 {
 sup {
   background-color: var(--bg-primary-color);
   border-radius: 1rem;
-  color: var(--color-dark);
+  color: var(--color-initial);
   font-size: xx-small;
   font-weight: bold;
   margin: 0.2rem;
@@ -57,6 +57,7 @@ sup {
 }
 .is-mono {
   font-family: var(--font-family-mono);
+  font-family: var(--font-mono);
 }
 
 .is-left {
